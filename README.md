@@ -8,7 +8,7 @@
 
 # secret deploy configMap
 ``` kubectl apply -f src/main/resources/mysql-configmap.yml```
-``` kubetctl get configMap```
+``` kubectl get configMap```
 
 # secret deploy secret
 ``` kubectl apply -f src/main/resources/mysqldb-credentials.yml```
