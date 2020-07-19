@@ -13,15 +13,16 @@
 # secret deploy secret
 ``` kubectl apply -f src/main/resources/mysqldb-credentials.yml```
 ``` kubectl apply -f src/main/resources/mysqldb-root-credentials.yml```
-``` kubetctl get secrets```
+``` kubectl get secrets```
 
 # deploy mysql service
-``` kubetctl apply -f src/main/resources/mysql-deployment.yml```
+``` kubectl apply -f src/main/resources/mysql-deployment.yml```
 ``` kubectl get services```
 
 # deploy spring service
-``` kubetctl apply -f src/main/resources/deployment.yml```
+``` kubectl apply -f src/main/resources/deployment.yml```
 ``` kubectl get services```
 
-
+# connect to mysql running  on kubernetes cluster from local machine
+```kubectl port-forward app-mysql-3323704556-nce3w 3306:3306```
 
